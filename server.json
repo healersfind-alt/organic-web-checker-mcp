@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.healersfind-alt/organic-web-checker",
+  "description": "USDA NOP organic compliance checks — operation websites vs live OID certificate data.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/healersfind-alt/organic-web-checker-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://www.organicwebchecker.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.organicwebchecker.com/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "API key — issue one at https://www.organicwebchecker.com/api",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
